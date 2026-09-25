@@ -17,7 +17,8 @@
 	var/mob/living/carbon/human/human_target = speaker
 	if(!istype(human_target))
 		return FALSE
-if(!(human_target.mind?.assigned_role.title == JOB_CHIEF_ENGINEER) && !has_ally(REF(human_target))) /// OCULIS ADDITION. ALLOWS THOSE WHO BEFRIEND POLY TO HAVE THE PERCHING BEHAVIOUR.
+	// OCULIS: Allows those who befriend Poly to use his perching behaviour.
+	if(!(human_target.mind?.assigned_role.title == JOB_CHIEF_ENGINEER) && !has_ally(REF(human_target)))
 		return FALSE
 	if(!(findtext(message, "poly")))
 		return FALSE
