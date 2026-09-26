@@ -1,0 +1,4 @@
+author: "Shroopy"
+delete-after: True
+changes:
+  - rscadd: "Added dice tracking to the *roll emote. You can now see the individual results for the dice you roll."
